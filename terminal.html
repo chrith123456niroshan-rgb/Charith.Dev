@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal CLI | Charith Niroshan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .terminal-container {
+            background: #020408;
+            border: 1px solid var(--accent-cyan);
+            border-radius: 16px;
+            padding: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+            min-height: 450px;
+            color: #00f2fe;
+        }
+
+        .terminal-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(0, 242, 254, 0.2);
+        }
+
+        .terminal-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .terminal-output {
+            line-height: 1.6;
+            font-size: 0.95rem;
+            max-height: 350px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+        }
+
+        .terminal-input-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .prompt {
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .cli-input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Interactive <span class="gradient-text">CLI Mode</span></h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Type <code style="color: var(--accent-cyan); background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px;">help</code> to see available terminal commands.</p>
+
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="terminal-btn" style="background: #ff5f56;"></span>
+                <span class="terminal-btn" style="background: #ffbd2e;"></span>
+                <span class="terminal-btn" style="background: #27c93f;"></span>
+                <span style="color: var(--text-secondary); font-size: 0.85rem; margin-left: 10px;">charith@vavuniya-os: ~</span>
+            </div>
+
+            <div class="terminal-output" id="terminal-out">
+                <p>Charith.OS [Version 2.026]</p>
+                <p>Type '<span style="color: #10b981;">help</span>' to view all commands.</p>
+                <br>
+            </div>
+
+            <div class="terminal-input-line">
+                <span class="prompt">charith@vavuniya:~$</span>
+                <input type="text" id="cli-input" class="cli-input" autofocus placeholder="type a command...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Dock Navigation -->
+    <nav class="dock-nav">
+        <a href="index.html" class="dock-item" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="about.html" class="dock-item" title="About & Career"><i class="fa-solid fa-user"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="terminal.html" class="dock-item active" title="CLI Terminal"><i class="fa-solid fa-terminal"></i></a>
+        <a href="contact.html" class="dock-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+
+    <script>
+        const input = document.getElementById('cli-input');
+        const output = document.getElementById('terminal-out');
+
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const cmd = input.value.trim().toLowerCase();
+                appendLine(`charith@vavuniya:~$ ${input.value}`, '#10b981');
+                
+                switch(cmd) {
+                    case 'help':
+                        appendLine('Available Commands:');
+                        appendLine(' - about     : Brief overview');
+                        appendLine(' - gpa       : Academic performance');
+                        appendLine(' - skills    : Tech stack & tools');
+                        appendLine(' - projects  : Recent engineering projects');
+                        appendLine(' - clear     : Clear terminal output');
+                        break;
+                    case 'about':
+                        appendLine('J.A. Charith Niroshan | BIT (Hons) Undergraduate @ University of Vavuniya.');
+                        appendLine('Full-Stack Web, AI (Computer Vision) & Embedded IoT Developer.');
+                        break;
+                    case 'gpa':
+                        appendLine('Current Cumulative GPA: 3.39 / 4.00 (University of Vavuniya)');
+                        break;
+                    case 'skills':
+                        appendLine('Languages: Java, Python, C#, C++ (Arduino), JavaScript, SQL');
+                        appendLine('Vision & IoT: OpenCV, MediaPipe, Smart Sensors, Relays');
+                        break;
+                    case 'projects':
+                        appendLine('1. Smart Hydroponics Grow Tower (Arduino/IoT)');
+                        appendLine('2. Gesture-Controlled Snake Game (Python OpenCV)');
+                        appendLine('3. Real-Time Cricket Scoring Web App (JS)');
+                        appendLine('4. ANSI Color ASCII Video Player (Python)');
+                        appendLine('5. Hostel Allocation System (C# .NET)');
+                        break;
+                    case 'clear':
+                        output.innerHTML = '';
+                        break;
+                    case '':
+                        break;
+                    default:
+                        appendLine(`Command not found: '${cmd}'. Type 'help' for commands.`, '#ff5f56');
+                }
+                
+                input.value = '';
+                output.scrollTop = output.scrollHeight;
+            }
+        });
+
+        function appendLine(text, color = '#00f2fe') {
+            const p = document.createElement('p');
+            p.style.color = color;
+            p.textContent = text;
+            output.appendChild(p);
+        }
+
+         <nav class="dock-nav">
+        <a href="index.html" class="dock-item" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="about.html" class="dock-item" title="About & Career"><i class="fa-solid fa-user"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
+        <!-- CV Quick View Link -->
+        <a href="cv.pdf" target="_blank" class="dock-item" title="View CV"><i class="fa-solid fa-file-pdf"></i></a>
+        <a href="terminal.html" class="dock-item" title="CLI Terminal active"><i class="fa-solid fa-terminal"></i></a>
+        <a href="contact.html" class="dock-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects & Repos | Charith Niroshan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header & Live Search Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2.5rem;">
+            <div>
+    <span style="color: var(--accent-cyan, #00f2fe); font-size: 0.85rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 0.4rem;">
+        <i class="fa-solid fa-code-merge"></i> Engineering Showcase
+    </span>
+    <h2 style="font-size: 2.4rem; margin: 0; font-weight: 800; letter-spacing: -0.5px;">
+        Projects & <span class="gradient-text">GitHub Repos</span>
+    </h2>
+    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.4rem;">Directly integrated with GitHub API for real-time code sync.</p>
+</div>
+            
+            <!-- Dynamic Search Input with Glassmorphism -->
+            <div style="position: relative; width: 100%; max-width: 340px;">
+                <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--accent-cyan, #00f2fe); font-size: 1rem;"></i>
+                <input type="text" id="project-search" placeholder="Search projects, stack, or tech..." 
+                       style="width: 100%; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 0.85rem 1rem 0.85rem 2.8rem; color: #fff; outline: none; font-size: 0.9rem; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);">
+            </div>
+        </div>
+
+        <!-- Section Title -->
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-star" style="color: var(--accent-cyan, #00f2fe); font-size: 1.2rem;"></i>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0; color: #fff;">Featured Engineering Projects</h3>
+        </div>
+
+        <!-- Featured Projects Bento Grid -->
+        <div class="bento-grid" style="margin-bottom: 3.5rem;">
+
+            <!-- Project 1: Hostel Management System (Full Span 4) -->
+            <div class="bento-card span-4 project-item" data-title="hostel management system database digitized record fullstack" data-lang="html css javascript mysql rdbms"
+                 style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.8rem; transition: transform 0.3s ease, border-color 0.3s ease;">
+                
+                <!-- Card Header -->
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.2rem;">
+                    <div>
+                        <span style="background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--accent-cyan, #00f2fe); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 0.6rem;">
+                            Full-Stack & Database Systems
+                        </span>
+                        <h3 style="font-size: 1.6rem; font-weight: 700; margin: 0; color: #fff;">Hostel Management System</h3>
+                    </div>
+                    <div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fa-solid fa-hotel" style="font-size: 1.4rem; color: var(--accent-cyan, #00f2fe);"></i>
+                    </div>
+                </div>
+
+                <!-- Problem & Contribution Containers -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    
+                    <!-- Problem Addressed -->
+                    <div style="background: rgba(239, 68, 68, 0.05); border-left: 3px solid #ef4444; border-radius: 0 12px 12px 0; padding: 1rem; border-top: 1px solid rgba(255,255,255,0.03); border-right: 1px solid rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <p style="color: #f87171; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0; display: flex; align-items: center; gap: 6px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Problem Addressed
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.88rem; line-height: 1.5; margin: 0;">
+                            Traditional paper-based hostel management caused frequent human errors, data mismatches, lost records, and inefficient administrative tracking.
+                        </p>
+                    </div>
+
+                    <!-- My Contribution -->
+                    <div style="background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10b981; border-radius: 0 12px 12px 0; padding: 1rem; border-top: 1px solid rgba(255,255,255,0.03); border-right: 1px solid rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.03);">
+                        <p style="color: #34d399; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 6px 0; display: flex; align-items: center; gap: 6px;">
+                            <i class="fa-solid fa-code-commit"></i> My Contribution
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.88rem; line-height: 1.5; margin: 0;">
+                            Architected and built a digitized Web & RDBMS database system to automate student registration, room allocations, and record tracking, completely eliminating paper-based errors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Badges -->
+                <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;">
+                    <span style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.2); color: var(--accent-cyan, #00f2fe); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">HTML5 / CSS3 / JS</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">RDBMS / MySQL</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">SAD Architecture</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Digital Cricket Scoring App (Span 2) -->
+            <div class="bento-card span-2 project-item" data-title="digital cricket scoring app match dynamic calculator stats" data-lang="java oop"
+                 style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between;">
+                
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <span style="background: rgba(121, 40, 202, 0.12); border: 1px solid rgba(121, 40, 202, 0.3); color: var(--accent-purple, #7928ca); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 0.5rem;">
+                                Software Application
+                            </span>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0; color: #fff;">Digital Cricket Scoring App</h3>
+                        </div>
+                        <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(121, 40, 202, 0.1); border: 1px solid rgba(121, 40, 202, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fa-solid fa-baseball-bat-ball" style="font-size: 1.2rem; color: var(--accent-purple, #7928ca);"></i>
+                        </div>
+                    </div>
+
+                    <!-- Problem -->
+                    <div style="background: rgba(245, 158, 11, 0.05); border-left: 3px solid #f59e0b; border-radius: 0 10px 10px 0; padding: 0.8rem; margin-bottom: 0.8rem;">
+                        <p style="color: #fbbf24; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin: 0 0 4px 0; display: flex; align-items: center; gap: 5px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Problem
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.84rem; line-height: 1.4; margin: 0;">
+                            Manual paper score sheets during cricket matches are cumbersome, time-consuming, and highly prone to calculation errors in runs and overs.
+                        </p>
+                    </div>
+
+                    <!-- Contribution -->
+                    <div style="background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10b981; border-radius: 0 10px 10px 0; padding: 0.8rem; margin-bottom: 1.2rem;">
+                        <p style="color: #34d399; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin: 0 0 4px 0; display: flex; align-items: center; gap: 5px;">
+                            <i class="fa-solid fa-code-commit"></i> Contribution
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.84rem; line-height: 1.4; margin: 0;">
+                            Developed an dynamic scoring app with auto-calculation engines for real-time, error-free match scoring and stats tracking.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <span style="background: rgba(121, 40, 202, 0.1); border: 1px solid rgba(121, 40, 202, 0.25); color: var(--accent-purple, #7928ca); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600;">Java / OOP</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.78rem;">Auto-Math Engine</span>
+                </div>
+            </div>
+
+            <!-- Project 3: Gesture Snake Game (Span 2) -->
+            <div class="bento-card span-2 project-item" data-title="gesture controlled snake game computer vision hci ai opencv" data-lang="python opencv mediapipe"
+                 style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between;">
+                
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div>
+                            <span style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--accent-green, #10b981); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 0.5rem;">
+                                Computer Vision / AI
+                            </span>
+                            <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0; color: #fff;">Gesture Snake Game</h3>
+                        </div>
+                        <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fa-solid fa-hand-pointer" style="font-size: 1.2rem; color: var(--accent-green, #10b981);"></i>
+                        </div>
+                    </div>
+
+                    <!-- Problem -->
+                    <div style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid var(--accent-cyan, #00f2fe); border-radius: 0 10px 10px 0; padding: 0.8rem; margin-bottom: 0.8rem;">
+                        <p style="color: var(--accent-cyan, #00f2fe); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin: 0 0 4px 0; display: flex; align-items: center; gap: 5px;">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Problem
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.84rem; line-height: 1.4; margin: 0;">
+                            Standard keyboard controls lack physical interaction, requiring a dynamic Human-Computer Interaction (HCI) solution to alleviate stress and cognitive fatigue.
+                        </p>
+                    </div>
+
+                    <!-- Contribution -->
+                    <div style="background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10b981; border-radius: 0 10px 10px 0; padding: 0.8rem; margin-bottom: 1.2rem;">
+                        <p style="color: #34d399; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; margin: 0 0 4px 0; display: flex; align-items: center; gap: 5px;">
+                            <i class="fa-solid fa-code-commit"></i> Contribution
+                        </p>
+                        <p style="color: var(--text-secondary, #94a3b8); font-size: 0.84rem; line-height: 1.4; margin: 0;">
+                            Engineered a computer vision application in Python using OpenCV to replace keyboard inputs with real-time hand-gesture control.
+                        </p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <span style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); color: var(--accent-green, #10b981); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600;">Python</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.78rem;">OpenCV</span>
+                    <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; padding: 4px 10px; border-radius: 20px; font-size: 0.78rem;">MediaPipe</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Live GitHub API Synced Repositories Section -->
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i class="fa-brands fa-github" style="font-size: 1.4rem; color: var(--accent-purple, #7928ca);"></i>
+                <h3 style="color: #fff; font-size: 1.3rem; margin: 0; font-weight: 700;">All Public Repositories</h3>
+            </div>
+            <span class="status-badge" style="font-size: 0.75rem; font-weight: 600; padding: 5px 14px; background: rgba(121, 40, 202, 0.12); border: 1px solid rgba(121, 40, 202, 0.3); color: var(--accent-purple, #7928ca); border-radius: 20px; display: inline-flex; align-items: center; gap: 6px;">
+                <span style="width: 7px; height: 7px; background: var(--accent-purple, #7928ca); border-radius: 50%; display: inline-block; box-shadow: 0 0 8px var(--accent-purple, #7928ca);"></span> Live Synced via GitHub API
+            </span>
+        </div>
+
+        <!-- Container where GitHub Repos load dynamically via script.js -->
+        <div class="bento-grid" id="github-projects-container">
+            <div style="grid-column: span 4; text-align: center; padding: 3.5rem; background: rgba(20, 24, 33, 0.4); backdrop-filter: blur(12px); border: 1px dashed rgba(255, 255, 255, 0.1); border-radius: 20px; color: var(--text-secondary);">
+                <i class="fa-solid fa-spinner fa-spin" style="font-size: 2.2rem; color: var(--accent-cyan, #00f2fe); margin-bottom: 1rem;"></i>
+                <p style="margin: 0; font-size: 0.95rem;">Syncing live projects from GitHub...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Floating Dock Navigation -->
+    <nav class="dock-nav">
+        <a href="index.html" class="dock-item" title="Home"><i class="fa-solid fa-house"></i></a>
+        <a href="about.html" class="dock-item" title="About & Career"><i class="fa-solid fa-user"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item active" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
+        <!-- CV Quick View Link -->
+        <a href="files/Charith_Niroshan_CV.pdf" target="_blank" class="dock-item" title="View CV"><i class="fa-solid fa-file-pdf"></i></a>
+        <a href="terminal.html" class="dock-item" title="CLI Terminal"><i class="fa-solid fa-terminal"></i></a>
+        <a href="contact.html" class="dock-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
