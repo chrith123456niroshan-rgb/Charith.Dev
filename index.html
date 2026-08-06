@@ -203,6 +203,30 @@
         <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=dark&bg_color=141821&title_color=7928ca&text_color=94a3b8&border_color=ffffff15" alt="Top Languages" style="max-width: 100%; height: auto; border-radius: 12px;" onerror="this.style.display='none'">
     </div>
 </div>
+
+<div style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+        <span style="position: relative; display: flex; height: 12px; width: 12px;">
+            <span style="animate: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; position: absolute; height: 100%; width: 100%; border-radius: 50%; background: #10b981; opacity: 0.75;"></span>
+            <span style="position: relative; border-radius: 50%; height: 12px; width: 12px; background: #10b981;"></span>
+        </span>
+        <div>
+            <h5 style="color: #fff; margin: 0; font-size: 0.95rem;">Available for Projects & Mentorship</h5>
+            <p style="color: var(--text-secondary, #94a3b8); margin: 2px 0 0 0; font-size: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: #00f2fe;"></i> Vavuniya, Sri Lanka</p>
+        </div>
+    </div>
+    <div style="text-align: right;">
+        <span id="sl-clock" style="color: #00f2fe; font-family: monospace; font-size: 1.1rem; font-weight: 700;">00:00:00 AM</span>
+        <p style="color: var(--text-secondary, #94a3b8); margin: 0; font-size: 0.75rem;">Local Time (SLST)</p>
+    </div>
+</div>
+
+<script>
+    setInterval(() => {
+        const options = { timeZone: 'Asia/Colombo', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+        document.getElementById('sl-clock').innerText = new Date().toLocaleTimeString('en-US', options);
+    }, 1000);
+</script>
     </div>
     <!-- Floating WhatsApp Chat Widget -->
 <a href="https://wa.me/94788648969?text=Hi%20Charith,%20I%20visited%20your%20portfolio!" target="_blank" title="Chat on WhatsApp" 
