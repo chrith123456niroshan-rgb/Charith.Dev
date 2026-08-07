@@ -353,3 +353,31 @@ function setupProjectSearch() {
         });
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const savedTheme = localStorage.getItem("theme") || "dark";
+
+    // Set initial theme
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    updateButton(savedTheme);
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            const currentTheme = document.documentElement.getAttribute("data-theme");
+            const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+            document.documentElement.setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            updateButton(newTheme);
+        });
+    }
+
+    function updateButton(theme) {
+        if (!themeToggleBtn) return;
+        if (theme === "light") {
+            themeToggleBtn.innerHTML = `☀️ Light`;
+        } else {
+            themeToggleBtn.innerHTML = `🌙 Dark`;
+        }
+    }
+});

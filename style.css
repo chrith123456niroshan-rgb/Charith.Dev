@@ -318,3 +318,85 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent-cyan);
 }
+
+/* Dark Mode Override Fix */
+body.dark-mode {
+  background-color: #070a0e !important;
+  color: #f0fdf4 !important;
+}
+
+body.dark-mode .bento-card, 
+body.dark-mode .card, 
+body.dark-mode div[class*="card"] {
+  background-color: rgba(13, 22, 28, 0.85) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+  color: #f0fdf4 !important;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode p, 
+body.dark-mode span {
+  color: #f0fdf4 !important;
+}
+
+/* =========================================================
+   SAFE & CLEAN LIGHT MODE OVERRIDES
+   ========================================================= */
+
+/* Light Mode active වූ විට විතරක් වැඩ කරන සරල වෙනස්කම් */
+html[data-theme="light"] {
+    color-scheme: light;
+}
+
+/* Base background සහ text color විතරක් වෙනස් කිරීම */
+html[data-theme="light"] body {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+}
+
+/* Bento Cards සහ Main Containers වල Light Theme Background */
+html[data-theme="light"] .bento-card,
+html[data-theme="light"] .container,
+html[data-theme="light"] header,
+html[data-theme="light"] nav,
+html[data-theme="light"] .dock-nav {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Light Mode එකේදී කියවන්න අමාරු වෙන White Text විතරක් Dark කිරීම */
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6,
+html[data-theme="light"] p,
+html[data-theme="light"] span,
+html[data-theme="light"] a {
+    color: inherit;
+}
+
+/* Accent Colors & Glassmorphism Inner Cards */
+html[data-theme="light"] [style*="background"] {
+    background-color: rgba(111, 143, 176, 0.8) !important;
+}
+
+/* Toggle Button Style */
+.theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: currentColor;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
