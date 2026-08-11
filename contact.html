@@ -1,51 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Charith Niroshan</title>
+    <title>Contact Channels | Charith Niroshan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem;">Get In <span class="gradient-text">Touch</span></h2>
+    <!-- Header Glassmorphic Block -->
+    <div class="container" style="margin-bottom: 0;">
+        <header class="branding-header">
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-wrapper">
+                    <img src="images/logo.png" alt="Charith Dev Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-code" style="font-size: 1.5rem; color: var(--accent-cyan);"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="brand-name">Charith<span class="gradient-text">.Dev</span></h1>
+                    <span class="brand-title">Software Engineering & IoT Specialist</span>
+                </div>
+            </a>
+            
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <button id="theme-toggle" class="theme-toggle-btn">🌙 Dark</button>
+                <div class="status-badge-header">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
+            </div>
+        </header>
+    </div>
 
-        <div class="bento-grid">
-            <div class="bento-card span-2">
-                <h3>Direct Channels</h3>
-                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="tel:+94788648969" style="color: var(--text-primary); text-decoration: none; background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 1rem; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
-                        <i class="fa-solid fa-phone" style="color: var(--accent-cyan);"></i> +94 78 864 8969
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 20px;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-envelope" style="color: var(--accent-cyan);"></i>
+            Get In <span class="gradient-text">Touch</span>
+        </h2>
+
+        <div class="bento-grid" style="margin-bottom: 2rem;">
+            
+            <!-- Direct Channels Card -->
+            <div class="bento-card span-2" style="justify-content: space-between; min-height: 300px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+                        <h3 style="font-size: 1.3rem;">Direct Channels</h3>
+                        <i class="fa-solid fa-paper-plane" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.5rem;">
+                        Feel free to contact me directly for research collaborations, engineering designs, or teaching resources.
+                    </p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 0.8rem; width: 100%;">
+                    <a href="tel:+94788648969" class="bento-card" style="padding: 1rem; border-radius: 16px; flex-direction: row; align-items: center; gap: 14px; margin: 0; background: rgba(255,255,255,0.02);">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-phone" style="color: var(--accent-cyan); font-size: 0.95rem;"></i>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-muted); font-size: 0.72rem; display: block;">Telephone Hotline</span>
+                            <span style="color: var(--text-primary); font-size: 0.9rem; font-weight: 600;">+94 78 864 8969</span>
+                        </div>
                     </a>
-                    <a href="mailto:charith123456niroshan@gmail.com" style="color: var(--text-primary); text-decoration: none; background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 1rem; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
-                        <i class="fa-solid fa-envelope" style="color: var(--accent-cyan);"></i> charith123456niroshan@gmail.com
+
+                    <a href="mailto:charith123456niroshan@gmail.com" class="bento-card" style="padding: 1rem; border-radius: 16px; flex-direction: row; align-items: center; gap: 14px; margin: 0; background: rgba(255,255,255,0.02);">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-envelope" style="color: var(--accent-purple); font-size: 0.95rem;"></i>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-muted); font-size: 0.72rem; display: block;">Professional Email</span>
+                            <span style="color: var(--text-primary); font-size: 0.9rem; font-weight: 600;">charith123456niroshan@gmail.com</span>
+                        </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/charith-niroshan-a5a495274" target="_blank" style="color: var(--text-primary); text-decoration: none; background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 1rem; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
-                        <i class="fa-brands fa-linkedin" style="color: var(--accent-cyan);"></i> LinkedIn Profile
+
+                    <a href="https://www.linkedin.com/in/charith-niroshan-a5a495274" target="_blank" class="bento-card" style="padding: 1rem; border-radius: 16px; flex-direction: row; align-items: center; gap: 14px; margin: 0; background: rgba(255,255,255,0.02);">
+                        <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-brands fa-linkedin" style="color: var(--accent-blue); font-size: 1rem;"></i>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-muted); font-size: 0.72rem; display: block;">LinkedIn Connection</span>
+                            <span style="color: var(--text-primary); font-size: 0.9rem; font-weight: 600;">Charith Niroshan</span>
+                        </div>
                     </a>
                 </div>
             </div>
 
-            <div class="bento-card span-2">
-                <h3>Download Official CV</h3>
-                <p style="color: var(--text-secondary); margin: 1rem 0 1.5rem 0;">Get my updated professional resume including university GPA, projects, and work experience.</p>
-                <a href="CV.pdf" class="btn-cyber" download style="width: 100%; justify-content: center;"><i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)</a>
-            </div>
-        </div>
-    </div>
+            <!-- Resume Download Card -->
+            <div class="bento-card span-2" style="justify-content: space-between; min-height: 300px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+                        <h3 style="font-size: 1.3rem;">Professional Resume</h3>
+                        <i class="fa-solid fa-file-pdf" style="color: var(--accent-purple); font-size: 1.25rem;"></i>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.5rem;">
+                        Download my updated Curriculum Vitae detailing academic semesters, cumulative GPA scores, engineering firmwares, and completed certifications.
+                    </p>
+                </div>
 
-     <nav class="dock-nav">
-        <a href="index.html" class="dock-item" title="Home"><i class="fa-solid fa-house"></i></a>
+                <div style="text-align: center; width: 100%;">
+                    <div style="padding: 2rem; background: rgba(255,255,255,0.01); border: 1px dashed var(--card-border); border-radius: 18px; margin-bottom: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-file-arrow-down" style="font-size: 2.2rem; color: var(--accent-purple); animation: pulseGlow 1.8s infinite;"></i>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Charith_Niroshan_CV.pdf (436 KB)</span>
+                    </div>
+                    <a href="cv.pdf" class="btn-cyber" download style="width: 100%;">
+                        <i class="fa-solid fa-arrow-down"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Floating Dock Nav -->
+    <nav class="dock-nav">
+        <a href="index.html" class="dock-item" title="Home Dashboard"><i class="fa-solid fa-house"></i></a>
         <a href="about.html" class="dock-item" title="About & Career"><i class="fa-solid fa-user"></i></a>
-        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
-        <a href="projects.html" class="dock-item" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
-        <!-- CV Quick View Link -->
-        <a href="cv.pdf" target="_blank" class="dock-item" title="View CV"><i class="fa-solid fa-file-pdf"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills & Toolkit"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item" title="Projects Showcase"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="cv.pdf" target="_blank" class="dock-item" title="Curriculum Vitae"><i class="fa-solid fa-file-pdf"></i></a>
         <a href="terminal.html" class="dock-item" title="CLI Terminal"><i class="fa-solid fa-terminal"></i></a>
-        <a href="contact.html" class="dock-item active" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        <a href="contact.html" class="dock-item active" title="Get In Touch"><i class="fa-solid fa-envelope"></i></a>
     </nav>
+
     <script src="script.js"></script>
 </body>
 </html>

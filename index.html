@@ -1,256 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charith Niroshan | Portfolio</title>
+    <title>Charith Niroshan | Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Top Glassmorphic Branding Header -->
-<header style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1rem 1.5rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-    
-    <!-- Brand Logo + Name -->
-    <a href="index.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none;">
-        <!-- Logo Image Container with Neon Glow -->
-        <div style="width: 80px; height: 80px; border-radius: 14px; background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(121, 40, 202, 0.15)); border: 1px solid rgba(0, 242, 254, 0.4); display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);">
-            <img src="images/logo.png" alt="Logo" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <!-- Fallback Cyber Icon if logo.png is missing -->
-            <div style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center;">
-                <i class="fa-solid fa-code" style="font-size: 1.3rem; color: var(--accent-cyan, #00f2fe);"></i>
+    <!-- Header Glassmorphic Block -->
+    <div class="container" style="margin-bottom: 0;">
+        <header class="branding-header">
+            <!-- Brand Logo & Title -->
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-wrapper">
+                    <img src="images/logo.png" alt="Charith Dev Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-code" style="font-size: 1.5rem; color: var(--accent-cyan);"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="brand-name">Charith<span class="gradient-text">.Dev</span></h1>
+                    <span class="brand-title">Software Engineering & IoT Specialist</span>
+                </div>
+            </a>
+            
+            <!-- Controls & Badge -->
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <button id="theme-toggle" class="theme-toggle-btn">🌙 Dark</button>
+                <div class="status-badge-header">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
             </div>
-        </div>
-        
-    
-       <!-- Name & Title with Standard Background Clip -->
-<div>
-    <h1 style="font-size: 1.35rem; font-weight: 800; margin: 0; color: #fff; letter-spacing: -0.3px;">
-        Charith<span style="background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">.Dev</span>
-    </h1>
-    <span style="color: var(--text-secondary, #94a3b8); font-size: 0.78rem; font-weight: 500; display: block; margin-top: 1px;">
-        Software Tech & ICT Educator
-    </span>
-
-    
-</div>
-<button id="theme-toggle" class="theme-toggle-btn">🌙 Dark</button>
-    </a>
-    
-    <!-- Dynamic Status Badge -->
-    <div style="display: flex; align-items: center; gap: 8px; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.25); padding: 6px 14px; border-radius: 20px;">
-        <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #10b981;"></span>
-        <span style="color: #34d399; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px;">Open to Opportunities</span>
+        </header>
     </div>
-    
-</header>
 
-    <div class="container">
-
-        <!-- Main Bento Grid -->
+    <!-- Main Content Container -->
+    <main class="container" style="margin-top: 20px;">
         <div class="bento-grid">
 
-            <!-- 1. Hero Card (Profile Avatar Image Included) [Prompt 1] -->
-            <div class="bento-card span-4 hero-card">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap-reverse; gap: 2rem;">
+            <!-- Bento Card 1: Hero Block -->
+            <div class="bento-card span-4 hero-card" style="min-height: 320px; justify-content: center;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap-reverse; gap: 2rem; width: 100%;">
                     
-                    <div style="flex: 1; min-width: 280px;">
-                        <span class="status-badge" style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-green, #10b981); color: var(--accent-green, #10b981); font-size: 0.8rem; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 0.5rem;">
-                            <span class="pulse-dot"></span> Available for Engineering Roles & Projects
-                        </span>
-                        <h1 style="font-size: 2.8rem; margin: 0.8rem 0 0.5rem 0;">
-                            Hi, I'm <span class="gradient-text">Charith Niroshan</span> 🚀
-                        </h1>
-                        <p style="font-size: 1.05rem; color: var(--text-secondary); max-width: 650px; line-height: 1.6; margin-bottom: 1.5rem;">
-                            BICT (Hons) Undergraduate at the University of Vavuniya. Passionate about Software Engineering, IoT & Embedded Systems, AI & Computer Vision, and Full-Stack Web Development.
+                    <div style="flex: 2; min-width: 280px;">
+                        <div class="status-badge" style="margin-bottom: 1rem;">
+                            <span class="pulse-dot"></span> BICT (Hons) Undergraduate
+                        </div>
+                        <h2 style="font-size: 2.8rem; line-height: 1.2; margin-bottom: 0.8rem;">
+                            Hi, I'm <span class="gradient-text">Charith Niroshan</span>
+                        </h2>
+                        <!-- Simulated Typewriter Target -->
+                        <h3 style="font-size: 1.25rem; font-weight: 500; min-height: 30px; margin-bottom: 1.2rem; color: var(--accent-blue);">
+                            <span id="typed-text"></span>
+                        </h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; max-width: 600px; margin-bottom: 1.8rem;">
+                            Passionate about engineering intelligent software systems, implementing hardware-embedded IoT, and building high-performance full-stack applications.
                         </p>
-                        <!-- Hero Card Action Buttons -->
-<div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1rem;">
-    <!-- CV Download / View Button -->
-    <a href="cv.pdf" download="Charith_Niroshan_CV.pdf" target="_blank" class="btn-cyber btn-cv">
-        <i class="fa-solid fa-file-arrow-down"></i> Download CV
-    </a>
+                        
+                        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                            <a href="cv.pdf" download="Charith_Niroshan_CV.pdf" target="_blank" class="btn-cyber btn-cv">
+                                <i class="fa-solid fa-file-arrow-down"></i> Resume PDF
+                            </a>
+                            <a href="projects.html" class="btn-cyber">
+                                View Showcase <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.html" class="btn-cyber btn-outline">
+                                Reach Out
+                            </a>
+                        </div>
+                    </div>
 
-    <!-- View Work Button -->
-    <a href="projects.html" class="btn-cyber btn-primary">
-        View Work <i class="fa-solid fa-arrow-right"></i>
-    </a>
-
-    <!-- Contact Button -->
-    <a href="contact.html" class="btn-cyber btn-outline">
-        Contact Me
-    </a>
-</div>
-</div>
-
-                    <!-- Profile Avatar Image -->
-                    <div style="position: relative; text-align: center; margin: 0 auto;">
-                        <div style="width: 150px; height: 150px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, var(--accent-cyan, #00f2fe), var(--accent-purple, #7928ca)); box-shadow: 0 0 25px rgba(0, 242, 254, 0.35);">
-                            <img src="images/profile.png" alt="Charith Niroshan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid #0d1117;">
+                    <!-- Profile Image -->
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                        <div style="position: relative; width: 180px; height: 180px; border-radius: 50%; padding: 4px; background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple)); box-shadow: var(--shadow-lg), var(--glow-cyan);">
+                            <img src="images/profile.png" alt="Charith Niroshan" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--bg-surface);">
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- 2. About Card (Workspace Image Background) [Prompt 4] -->
-            <div class="bento-card span-2" style="position: relative; overflow: hidden;">
-                <img src="images/workspace.png" alt="Workspace" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.15; z-index: 0;">
+            <!-- Bento Card 2: About Me Summary -->
+            <div class="bento-card span-2" style="min-height: 250px; justify-content: space-between;">
+                <div style="position: absolute; inset: 0; pointer-events: none; opacity: 0.08; z-index: 0; overflow: hidden; border-radius: 28px;">
+                    <img src="images/workspace.png" alt="Workspace" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 <div style="position: relative; z-index: 1;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <span style="color: var(--accent-cyan, #00f2fe); font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">About Me</span>
-                        <i class="fa-solid fa-user" style="color: var(--accent-cyan, #00f2fe);"></i>
+                        <span style="color: var(--accent-cyan); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Background</span>
+                        <i class="fa-solid fa-user-tie" style="color: var(--accent-cyan); font-size: 1.1rem;"></i>
                     </div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem;">Building Intelligent Systems</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.2rem;">
-                        Focusing on practical engineering—ranging from IoT automation to computer vision engines and database design.
+                    <h3 style="font-size: 1.35rem; margin-bottom: 0.6rem;">Academic Journey</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin-bottom: 1.5rem;">
+                        Building solid engineering credentials with honors degree coursework, competitive robotics research, and hands-on teaching experience.
                     </p>
-                    <a href="about.html" style="color: var(--accent-cyan, #00f2fe); font-size: 0.85rem; font-weight: bold; text-decoration: none;">
-                        More about my journey <i class="fa-solid fa-chevron-right"></i>
-                    </a>
                 </div>
+                <a href="about.html" style="font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; z-index: 1;">
+                    Timeline & Career <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                </a>
             </div>
 
-            <!-- Live GitHub Analytics Bento Card (Clickable Link) -->
-<a href="https://github.com/chrith123456niroshan-rgb" target="_blank" rel="noopener noreferrer" class="bento-card span-2" style="text-decoration: none; color: inherit; display: block; transition: transform 0.3s ease, border-color 0.3s ease;">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-        <div>
-            <span style="color: var(--accent-purple, #7928ca); font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Live Metrics</span>
-            <h3 style="font-size: 1.3rem; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
-                GitHub Profile Overview 
-                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85rem; color: var(--accent-purple, #7928ca);"></i>
-            </h3>
-        </div>
-        <i class="fa-brands fa-github-alt" style="font-size: 1.8rem; color: var(--accent-purple, #7928ca);"></i>
-    </div>
-
-    <!-- Dynamic Stats -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 1rem; border-radius: 12px; text-align: center;">
-            <h2 id="github-repos" style="font-size: 1.8rem; color: var(--accent-cyan, #00f2fe); margin: 0;">--</h2>
-            <p style="color: var(--text-secondary); font-size: 0.8rem; margin: 4px 0 0 0;">Public Repos</p>
-        </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 1rem; border-radius: 12px; text-align: center;">
-            <h2 style="font-size: 1.8rem; color: var(--accent-green, #10b981); margin: 0;">5+</h2>
-            <p style="color: var(--text-secondary); font-size: 0.8rem; margin: 4px 0 0 0;">Major Projects</p>
-        </div>
-    </div>
-</a>
-            <!-- 4. Core Tech Stack (Circuit Board Image Background) [Prompt 6] -->
-            <div class="bento-card span-2" style="position: relative; overflow: hidden;">
-                <img src="images/circuit-board.png" alt="Hardware" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.12; z-index: 0;">
-                <div style="position: relative; z-index: 1;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                        <span style="color: var(--accent-green, #10b981); font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Core Toolkit</span>
-                        <i class="fa-solid fa-microchip" style="color: var(--accent-green, #10b981);"></i>
+            <!-- Bento Card 3: Live GitHub Analytics Summary -->
+            <a href="https://github.com/chrith123456niroshan-rgb" target="_blank" rel="noopener noreferrer" class="bento-card span-2" style="min-height: 250px; text-decoration: none; justify-content: space-between;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
+                        <span style="color: var(--accent-purple); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Code Repos</span>
+                        <i class="fa-brands fa-github" style="color: var(--accent-purple); font-size: 1.4rem;"></i>
                     </div>
-                    <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Tech Stack Overview</h3>
-                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span style="background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--accent-cyan, #00f2fe); padding: 5px 10px; border-radius: 8px; font-size: 0.8rem;">Java</span>
-                        <span style="background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--accent-cyan, #00f2fe); padding: 5px 10px; border-radius: 8px; font-size: 0.8rem;">Python</span>
-                        <span style="background: rgba(121, 40, 202, 0.1); border: 1px solid rgba(121, 40, 202, 0.3); color: var(--accent-purple, #7928ca); padding: 5px 10px; border-radius: 8px; font-size: 0.8rem;">OpenCV</span>
-                        <span style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: var(--accent-green, #10b981); padding: 5px 10px; border-radius: 8px; font-size: 0.8rem;">Arduino / IoT</span>
-                    </div>
-                    <div style="margin-top: 1.2rem;">
-                        <a href="skills.html" style="color: var(--accent-green, #10b981); font-size: 0.85rem; font-weight: bold; text-decoration: none;">
-                            Explore skills <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. Featured Project Card (Smart Hydroponics Image) [Prompt 2] -->
-            <div class="bento-card span-2" style="padding: 0; overflow: hidden;">
-                <div class="project-img-container" style="height: 140px; position: relative;">
-                    <img src="images/smart-hydroponics.png" alt="Smart Hydroponics" class="project-img">
-                    <span class="tech-tag-floating">IoT & Embedded</span>
-                </div>
-                <div style="padding: 1.2rem;">
-                    <h3 style="font-size: 1.2rem; margin-bottom: 0.4rem;">Smart Hydroponics Tower</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.8rem;">
-                        Automated IoT farming system with real-time pH and EC nutrient tracking.
+                    <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem; display: flex; align-items: center; gap: 6px;">
+                        Live Repository Stats
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; color: var(--text-muted);"></i>
+                    </h3>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5;">
+                        Syncing live statistics and codebase metadata from primary open-source projects.
                     </p>
+                </div>
                 
-                    <!-- Live Website Link Button -->
-                    <a href="https://growtower.lk/" target="_blank" style="background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #34d399; font-weight: 600; font-size: 0.8rem; padding: 6px 14px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.3s ease;">
-                    <i class="fa-solid fa-globe"></i> Visit Live Site
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 0.8rem; border-radius: 12px; text-align: center;">
+                        <h4 id="github-repos" style="font-size: 1.6rem; color: var(--accent-cyan); margin: 0; font-family: var(--font-mono);">--</h4>
+                        <span style="color: var(--text-muted); font-size: 0.75rem;">Repositories</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--card-border); padding: 0.8rem; border-radius: 12px; text-align: center;">
+                        <h4 style="font-size: 1.6rem; color: var(--accent-green); margin: 0; font-family: var(--font-mono);">5+</h4>
+                        <span style="color: var(--text-muted); font-size: 0.75rem;">Key Projects</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Bento Card 4: Tech Stack Overview -->
+            <div class="bento-card span-2" style="min-height: 260px; justify-content: space-between;">
+                <div style="position: absolute; inset: 0; pointer-events: none; opacity: 0.08; z-index: 0; overflow: hidden; border-radius: 28px;">
+                    <img src="images/circuit-board.png" alt="Circuitry" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="position: relative; z-index: 1;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <span style="color: var(--accent-green); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Core stack</span>
+                        <i class="fa-solid fa-cubes" style="color: var(--accent-green); font-size: 1.15rem;"></i>
+                    </div>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 0.8rem;">Engineering Stack</h3>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <span style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.15); color: var(--accent-cyan); padding: 5px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">Java</span>
+                        <span style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.15); color: var(--accent-cyan); padding: 5px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">Python</span>
+                        <span style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.15); color: var(--accent-purple); padding: 5px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">OpenCV</span>
+                        <span style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.15); color: var(--accent-green); padding: 5px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;">Arduino / IoT</span>
+                    </div>
+                </div>
+                <a href="skills.html" style="font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; z-index: 1;">
+                    Detailed Competencies <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                </a>
+            </div>
+
+            <!-- Bento Card 5: Spotlight Project -->
+            <div class="bento-card span-2" style="min-height: 260px; justify-content: space-between; padding: 1.5rem;">
+                <div class="project-img-container" style="height: 120px; margin-bottom: 0.8rem;">
+                    <img src="images/smart-hydroponics.png" alt="Smart Hydroponics" class="project-img">
+                    <span class="tech-tag-floating">IoT Automation</span>
+                </div>
+                <div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.2rem;">Smart Hydroponics Tower</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.4; margin-bottom: 0.8rem;">
+                        Commercial IoT farming system with precision sensors and closed-loop telemetry.
+                    </p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="https://growtower.lk/" target="_blank" class="btn-cyber btn-outline" style="padding: 6px 12px; font-size: 0.78rem; border-color: var(--accent-green); color: var(--accent-green);">
+                        <i class="fa-solid fa-globe"></i> Visit Site
                     </a>
+                    <button data-project="hydroponics" class="btn-cyber" style="padding: 6px 12px; font-size: 0.78rem;">
+                        View Code
+                    </button>
                 </div>
             </div>
 
-            <!-- 6. Developer Terminal Banner (Terminal Banner Image Background) [Prompt 7] -->
-            <div class="bento-card span-4" style="position: relative; overflow: hidden; border: 1px solid var(--card-border);">
-                <img src="images/terminal-bg.png" alt="Terminal" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; z-index: 0;">
-                <div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <i class="fa-solid fa-terminal" style="font-size: 2rem; color: var(--accent-cyan, #00f2fe);"></i>
+            <!-- Bento Card 6: Interactive Terminal Banner -->
+            <div class="bento-card span-4" style="min-height: 130px; justify-content: center;">
+                <div style="position: absolute; inset: 0; pointer-events: none; opacity: 0.1; z-index: 0; overflow: hidden; border-radius: 28px;">
+                    <img src="images/terminal-bg.png" alt="Shell Interface" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 1.25rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(0, 242, 254, 0.08); border: 1px solid var(--card-border-hover); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-terminal" style="font-size: 1.5rem; color: var(--accent-cyan);"></i>
+                        </div>
                         <div>
-                            <h3 style="font-size: 1.2rem; margin: 0;">Interactive Developer Terminal</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 4px 0 0 0;">Explore my profile and skills via interactive live terminal commands.</p>
+                            <h3 style="font-size: 1.25rem; margin: 0; color: var(--text-primary);">Interactive Developer CLI Terminal</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 3px;">Launch a virtual console terminal to query GPA, tech stack, and background commands.</p>
                         </div>
                     </div>
-                    <a href="terminal.html" class="btn-cyber" style="background: var(--accent-cyan, #00f2fe); color: #000; padding: 0.6rem 1.2rem; border-radius: 10px; font-weight: bold; text-decoration: none;">
-                        Launch CLI <i class="fa-solid fa-code"></i>
+                    <a href="terminal.html" class="btn-cyber" style="padding: 0.75rem 1.4rem;">
+                        Launch CLI Terminal <i class="fa-solid fa-code" style="margin-left: 4px;"></i>
                     </a>
                 </div>
             </div>
 
+            <!-- Bento Card 7: Live Github Readme Stats -->
+            <div class="bento-card span-4" style="text-align: center; justify-content: center; gap: 1rem;">
+                <h4 style="font-size: 1.15rem; margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <i class="fa-brands fa-github" style="color: var(--accent-purple); font-size: 1.3rem;"></i> 
+                    Real-Time GitHub Developer Insights
+                </h4>
+                <!-- Replaced YOUR_GITHUB_USERNAME with chrith123456niroshan-rgb -->
+                <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; width: 100%;">
+                    <img src="https://github-readme-stats.vercel.app/api?username=chrith123456niroshan-rgb&show_icons=true&theme=dark&bg_color=0b0f19&title_color=00f2fe&text_color=94a3b8&border_color=ffffff15" alt="GitHub Profile Stats" style="max-width: 100%; height: 165px; border-radius: 16px;" onerror="this.style.display='none'">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chrith123456niroshan-rgb&layout=compact&theme=dark&bg_color=0b0f19&title_color=a855f7&text_color=94a3b8&border_color=ffffff15" alt="GitHub Top Languages" style="max-width: 100%; height: 165px; border-radius: 16px;" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+            <!-- Bento Card 8: Local Time & Availability Status Bar -->
+            <div class="bento-card span-4" style="padding: 1.25rem 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="position: relative; display: flex; height: 12px; width: 12px;">
+                            <span style="position: absolute; height: 100%; width: 100%; border-radius: 50%; background: var(--accent-green); opacity: 0.75; animation: pulseGlow 1.5s infinite;"></span>
+                            <span style="position: relative; border-radius: 50%; height: 12px; width: 12px; background: var(--accent-green);"></span>
+                        </span>
+                        <div>
+                            <h4 style="font-size: 0.95rem; margin: 0;">Open to Technical Opportunities & Collabs</h4>
+                            <p style="color: var(--text-secondary); margin-top: 2px; font-size: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: var(--accent-cyan); margin-right: 4px;"></i>Vavuniya, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <span id="sl-clock" style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 1.15rem; font-weight: 700;">00:00:00 AM</span>
+                        <p style="color: var(--text-muted); margin: 0; font-size: 0.75rem; letter-spacing: 0.5px;">Local Time (SLST)</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </main>
 
-        <!-- Live GitHub Stats Banner -->
-<div class="bento-card span-4" style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.5rem; text-align: center; margin-bottom: 2.5rem;">
-    <h4 style="color: #fff; font-size: 1.1rem; margin: 0 0 1rem 0;"><i class="fa-brands fa-github" style="color: var(--accent-purple, #7928ca);"></i> Real-Time GitHub Developer Insights</h4>
-    <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <!-- Replace 'YOUR_GITHUB_USERNAME' with your actual username -->
-        <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=dark&bg_color=141821&title_color=00f2fe&text_color=94a3b8&border_color=ffffff15" alt="GitHub Stats" style="max-width: 100%; height: auto; border-radius: 12px;" onerror="this.style.display='none'">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=dark&bg_color=141821&title_color=7928ca&text_color=94a3b8&border_color=ffffff15" alt="Top Languages" style="max-width: 100%; height: auto; border-radius: 12px;" onerror="this.style.display='none'">
-    </div>
-</div>
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/94788648969?text=Hi%20Charith,%20I%20visited%20your%20portfolio!" target="_blank" title="Chat on WhatsApp" 
+       style="position: fixed; bottom: 24px; right: 24px; width: 52px; height: 52px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35); z-index: 999; transition: transform 0.3s ease;"
+       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-<div style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-    <div style="display: flex; align-items: center; gap: 12px;">
-        <span style="position: relative; display: flex; height: 12px; width: 12px;">
-            <span style="animate: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; position: absolute; height: 100%; width: 100%; border-radius: 50%; background: #10b981; opacity: 0.75;"></span>
-            <span style="position: relative; border-radius: 50%; height: 12px; width: 12px; background: #10b981;"></span>
-        </span>
-        <div>
-            <h5 style="color: #fff; margin: 0; font-size: 0.95rem;">Available for Projects & Mentorship</h5>
-            <p style="color: var(--text-secondary, #94a3b8); margin: 2px 0 0 0; font-size: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: #00f2fe;"></i> Vavuniya, Sri Lanka</p>
-        </div>
-    </div>
-    <div style="text-align: right;">
-        <span id="sl-clock" style="color: #00f2fe; font-family: monospace; font-size: 1.1rem; font-weight: 700;">00:00:00 AM</span>
-        <p style="color: var(--text-secondary, #94a3b8); margin: 0; font-size: 0.75rem;">Local Time (SLST)</p>
-    </div>
-</div>
-
-<script>
-    setInterval(() => {
-        const options = { timeZone: 'Asia/Colombo', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-        document.getElementById('sl-clock').innerText = new Date().toLocaleTimeString('en-US', options);
-    }, 1000);
-</script>
-    </div>
-    <!-- Floating WhatsApp Chat Widget -->
-<a href="https://wa.me/94788648969?text=Hi%20Charith,%20I%20visited%20your%20portfolio!" target="_blank" title="Chat on WhatsApp" 
-   style="position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: justify; justify-content: center; font-size: 1.8rem; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 999; transition: transform 0.3s ease;">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
-    <!-- Floating Dock Nav -->
- <nav class="dock-nav">
-        <a href="index.html" class="dock-item active" title="Home"><i class="fa-solid fa-house"></i></a>
+    <!-- Floating Dock Nav (Responsive UI) -->
+    <nav class="dock-nav">
+        <a href="index.html" class="dock-item active" title="Home Dashboard"><i class="fa-solid fa-house"></i></a>
         <a href="about.html" class="dock-item" title="About & Career"><i class="fa-solid fa-user"></i></a>
-        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
-        <a href="projects.html" class="dock-item" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
-        <!-- CV Quick View Link -->
-        <a href="cv.pdf" target="_blank" class="dock-item" title="View CV"><i class="fa-solid fa-file-pdf"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills & Toolkit"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item" title="Projects Showcase"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="cv.pdf" target="_blank" class="dock-item" title="Curriculum Vitae"><i class="fa-solid fa-file-pdf"></i></a>
         <a href="terminal.html" class="dock-item" title="CLI Terminal"><i class="fa-solid fa-terminal"></i></a>
-        <a href="contact.html" class="dock-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        <a href="contact.html" class="dock-item" title="Get In Touch"><i class="fa-solid fa-envelope"></i></a>
     </nav>
 
     <script src="script.js"></script>
-
-    
 </body>
 </html>

@@ -1,266 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About & Career | Charith Niroshan</title>
+    <title>Academic & Timeline | Charith Niroshan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem;">Career & <span class="gradient-text">Academic Timeline</span></h2>
+    <!-- Header Glassmorphic Block -->
+    <div class="container" style="margin-bottom: 0;">
+        <header class="branding-header">
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-wrapper">
+                    <img src="images/logo.png" alt="Charith Dev Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-code" style="font-size: 1.5rem; color: var(--accent-cyan);"></i>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="brand-name">Charith<span class="gradient-text">.Dev</span></h1>
+                    <span class="brand-title">Software Engineering & IoT Specialist</span>
+                </div>
+            </a>
+            
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <button id="theme-toggle" class="theme-toggle-btn">🌙 Dark</button>
+                <div class="status-badge-header">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 20px;">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan);"></i> 
+            Career & <span class="gradient-text">Academic Timeline</span>
+        </h2>
 
         <div class="bento-grid">
-        
-       <!-- Experience, Competitions & Activities Bento Card (Span 4) -->
-<div class="bento-card span-4" style="margin-top: 1.5rem;">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-        <div>
-            <span style="color: var(--accent-purple, #7928ca); font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Hands-On, Leadership & Mentorship</span>
-            <h3 style="font-size: 1.5rem; margin-top: 4px;"><i class="fa-solid fa-briefcase" style="color: var(--accent-purple, #7928ca);"></i> Experience, Competitions & Activities</h3>
-        </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem;">
-        
-        <!-- Teaching & Mentorship Experience -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
-                <i class="fa-solid fa-chalkboard-user" style="color: var(--accent-cyan, #00f2fe); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Teaching & Mentorship</h4>
-            </div>
-            <p style="color: #fff; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.2rem;">G.C.E. A/L ICT & SFT Educator</p>
-            <span style="color: var(--accent-cyan, #00f2fe); font-size: 0.8rem; display: block; margin-bottom: 0.6rem;">Advanced Level Instructor</span>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
-                Taught Information & Communication Technology (ICT) and Science for Technology (SFT) to Advanced Level students. Mentored students on technology principles, logical thinking, and exam strategies.
-            </p>
-        </div>
-
-        <!-- Tech Industry Experience (HIT Innovation) -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
-                <i class="fa-solid fa-laptop-code" style="color: var(--accent-purple, #7928ca); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Tech Industry Experience</h4>
-            </div>
-            <p style="color: #fff; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.2rem;">HIT Innovation</p>
-            <span style="color: var(--text-secondary); font-size: 0.8rem; display: block; margin-bottom: 0.6rem;">Duration: 2 Months</span>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
-                Gained practical exposure to technology solutions, workflow execution, and collaborative development within a corporate innovation environment.
-            </p>
-        </div>
-
-        <!-- Robotics Competition & Training (SLIIT RoboFest & Fab Lanka) -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
-                <i class="fa-solid fa-robot" style="color: var(--accent-green, #10b981); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Robotics & Industry 5.0</h4>
-            </div>
-            <p style="color: #fff; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem;">SLIIT RoboFest Competitor</p>
-            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.8rem;">
-                Participated as an active competitor in SLIIT RoboFest, designing and building competitive hardware/robotics solutions.
-            </p>
-            <p style="color: #fff; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem;">Fab Lanka — Industry 5.0 Training</p>
-            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.4; margin: 0;">
-                Completed specialized training on Industry 5.0 concepts, digital fabrication, and human-centric smart manufacturing technologies.
-            </p>
-        </div>
-
-        <!-- University Athletics & Sports -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
-                <i class="fa-solid fa-trophy" style="color: #f59e0b; font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Sports & University Athletics</h4>
-            </div>
-            <p style="color: #fff; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.2rem;">University of Vavuniya Sports Teams</p>
-            <span style="color: #f59e0b; font-size: 0.8rem; display: block; margin-bottom: 0.6rem;">Active Student Athlete</span>
-            <ul style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.1rem; line-height: 1.6; margin: 0;">
-                <li><strong>Cricket Team Member:</strong> Representing the university in inter-faculty/higher education matches.</li>
-                <li><strong>Athletics Team Member:</strong> Representing University of Vavuniya in track and field athletic meets.</li>
-            </ul>
-        </div>
-
-    </div>
-</div>
-       
-
-            <!-- Education Timeline Tile -->
-            <!-- Education & Academic Qualifications Bento Card (Span 4) -->
-<div class="bento-card span-4">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-        <div>
-            <span style="color: var(--accent-cyan, #00f2fe); font-size: 0.8rem; font-weight: bold; text-transform: uppercase;">Academic Background</span>
-            <h3 style="font-size: 1.5rem; margin-top: 4px;"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan, #00f2fe);"></i> Education & Qualifications</h3>
-        </div>
-        <span class="status-badge" style="background: rgba(0, 242, 254, 0.1); border: 1px solid var(--accent-cyan, #00f2fe); color: var(--accent-cyan, #00f2fe); font-size: 0.85rem; padding: 4px 12px; border-radius: 20px;">
-            2nd Year Undergraduate
-        </span>
-    </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem;">
-        
-        <!-- University Degree -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.6rem;">
-                <i class="fa-solid fa-university" style="color: var(--accent-cyan, #00f2fe); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">BICT (Hons) Undergraduate</h4>
-            </div>
-            <p style="color: var(--accent-cyan, #00f2fe); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">University of Vavuniya | Faculty of Technological Studies</p>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
-                Currently in 2nd Year. Specializing in Web Technologies, Software Engineering, RDBMS Database Systems, SAD, and Hardware-Software Integration.
-            </p>
-        </div>
-
-        <!-- Diplomas (IMBS Green Campus) -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.6rem;">
-                <i class="fa-solid fa-certificate" style="color: var(--accent-purple, #7928ca); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Professional Diplomas</h4>
-            </div>
-            <p style="color: var(--accent-purple, #7928ca); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.4rem;">IMBS Green Campus</p>
-            <ul style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.1rem; line-height: 1.6; margin: 0;">
-                <li>Diploma in Information & Communication Technology (DICT)</li>
-                <li>Diploma in English Language & Communication</li>
-            </ul>
-        </div>
-
-        <!-- Secondary Education (A/L & O/L) -->
-        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--card-border, rgba(255,255,255,0.08)); padding: 1.2rem; border-radius: 12px;">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.6rem;">
-                <i class="fa-solid fa-school" style="color: var(--accent-green, #10b981); font-size: 1.2rem;"></i>
-                <h4 style="font-size: 1.05rem; margin: 0;">Secondary Education(Sandalanka C.C)</h4>
-            </div>
-            <p style="color: #fff; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">G.C.E. Advanced Level (Biosystems Technology)</p>
-            <p style="color: var(--accent-green, #10b981); font-size: 0.85rem; margin-bottom: 0.6rem;">Results: 2 Bs, 1 C</p>
             
-            <p style="color: #fff; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem;">G.C.E. Ordinary Level</p>
-            <p style="color: var(--accent-green, #10b981); font-size: 0.85rem; margin: 0;">Results: 3 As, 5 Bs, 1 C</p>
+            <!-- Experience & Leadership Card -->
+            <div class="bento-card span-4">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.8rem; border-bottom: 1px solid var(--card-border); padding-bottom: 1rem;">
+                    <div>
+                        <span style="color: var(--accent-purple); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Field Competency</span>
+                        <h3 style="font-size: 1.4rem; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-briefcase" style="color: var(--accent-purple);"></i> Experience & Leadership
+                        </h3>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                    
+                    <!-- Item 1: Teaching -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 8px; background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.2); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-chalkboard-user" style="color: var(--accent-cyan); font-size: 0.95rem;"></i>
+                                </div>
+                                <h4 style="font-size: 1.05rem; margin: 0; color: var(--text-primary);">Teaching & Mentorship</h4>
+                            </div>
+                            <span style="color: var(--accent-cyan); font-size: 0.78rem; font-weight: 600; display: block; margin-bottom: 0.6rem;">G.C.E. A/L ICT & SFT Instructor</span>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                Instructed Advanced Level students on computer science principles, database modeling, electronics logic design, and exam methodologies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: HIT Innovation -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 8px; background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.2); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-laptop-code" style="color: var(--accent-purple); font-size: 0.95rem;"></i>
+                                </div>
+                                <h4 style="font-size: 1.05rem; margin: 0; color: var(--text-primary);">Industry Exposure</h4>
+                            </div>
+                            <span style="color: var(--accent-purple); font-size: 0.78rem; font-weight: 600; display: block; margin-bottom: 0.6rem;">HIT Innovation | Developer Trainee</span>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                Acquired deep familiarity with professional workflows, collaborative codebase testing, version controllers, and agile development.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Robotics -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 8px; background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-robot" style="color: var(--accent-green); font-size: 0.95rem;"></i>
+                                </div>
+                                <h4 style="font-size: 1.05rem; margin: 0; color: var(--text-primary);">Robotics & Fab Labs</h4>
+                            </div>
+                            <span style="color: var(--accent-green); font-size: 0.78rem; font-weight: 600; display: block; margin-bottom: 0.6rem;">SLIIT RoboFest Competitor</span>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                Designed hardware firmware for microcontrollers. Trained under Fab Lanka specializing in Industry 5.0 smart fabrication setups.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Athletics -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.8rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 8px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-circle-play" style="color: #f59e0b; font-size: 0.95rem;"></i>
+                                </div>
+                                <h4 style="font-size: 1.05rem; margin: 0; color: var(--text-primary);">Athletics & Sports</h4>
+                            </div>
+                            <span style="color: #f59e0b; font-size: 0.78rem; font-weight: 600; display: block; margin-bottom: 0.6rem;">University Cricket & Track Team</span>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0;">
+                                Active member of University of Vavuniya cricket and track-and-field squads, building leadership and team cohesion.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Educational Background Card -->
+            <div class="bento-card span-4">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.8rem; border-bottom: 1px solid var(--card-border); padding-bottom: 1rem;">
+                    <div>
+                        <span style="color: var(--accent-cyan); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Academic Qualifications</span>
+                        <h3 style="font-size: 1.4rem; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
+                            <i class="fa-solid fa-university" style="color: var(--accent-cyan);"></i> Education & Accreditations
+                        </h3>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <!-- Vavuniya University -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px;">
+                        <span style="color: var(--accent-cyan); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">2024 - Present</span>
+                        <h4 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-primary);">BICT (Hons) Undergraduate</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.4; margin-bottom: 8px;">
+                            Faculty of Technological Studies, University of Vavuniya.
+                        </p>
+                        <span class="status-badge" style="font-size: 0.72rem; padding: 3px 8px;">Cumulative GPA: 3.39 / 4.00</span>
+                    </div>
+
+                    <!-- Professional Diplomas -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px;">
+                        <span style="color: var(--accent-purple); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">Professional Credentials</span>
+                        <h4 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-primary);">IMBS Green Campus Diplomas</h4>
+                        <ul style="color: var(--text-secondary); font-size: 0.85rem; padding-left: 1.1rem; line-height: 1.5; margin: 0;">
+                            <li>Diploma in Information & Communication Tech (DICT)</li>
+                            <li>Diploma in English Language & Communication</li>
+                        </ul>
+                    </div>
+
+                    <!-- Secondary Schooling -->
+                    <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); padding: 1.25rem; border-radius: 16px;">
+                        <span style="color: var(--accent-green); font-size: 0.72rem; font-weight: 700; text-transform: uppercase;">Sandalanka Central College</span>
+                        <h4 style="font-size: 1.1rem; margin: 6px 0; color: var(--text-primary);">Advanced & Ordinary Levels</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 4px;">
+                            <strong>G.C.E. Advanced Level:</strong> Biosystems Technology (2Bs, 1C)
+                        </p>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0;">
+                            <strong>G.C.E. Ordinary Level:</strong> 3As, 5Bs, 1C
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Student Resource Hub (For ICT & SFT classes) -->
+            <div class="bento-card span-4">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem;">
+                    <i class="fa-solid fa-book-open" style="color: var(--accent-cyan); font-size: 1.25rem;"></i>
+                    <h3 style="font-size: 1.4rem; margin: 0;">A/L ICT & SFT Student Resources</h3>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <!-- Resource 1 -->
+                    <div style="background: rgba(0, 242, 254, 0.03); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 18px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
+                        <div>
+                            <span style="color: var(--accent-cyan); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">GCE A/L Syllabus</span>
+                            <h4 style="font-size: 1.1rem; margin: 6px 0 8px 0; color: var(--text-primary);">Logic Gates & Boolean Algebra Summary</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.4; margin-bottom: 1.2rem;">Quick-study summary sheet covering truth tables, algebraic expressions, and logic gate mapping.</p>
+                        </div>
+                        <a href="files/Logic_Gates_Summary.pdf" download style="background: rgba(0, 242, 254, 0.15); border: 1px solid var(--accent-cyan); color: var(--accent-cyan); font-size: 0.78rem; font-weight: 700; padding: 8px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: fit-content; transition: var(--transition-smooth);">
+                            <i class="fa-solid fa-download"></i> Download PDF
+                        </a>
+                    </div>
+
+                    <!-- Resource 2 -->
+                    <div style="background: rgba(16, 185, 129, 0.03); border: 1px solid rgba(16, 185, 129, 0.15); border-radius: 18px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 180px;">
+                        <div>
+                            <span style="color: var(--accent-green); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Coding Basics</span>
+                            <h4 style="font-size: 1.1rem; margin: 6px 0 8px 0; color: var(--text-primary);">Python Programming Essentials Guide</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.4; margin-bottom: 1.2rem;">Syllabus guide handling control structures, looping arrays, and sample school programming challenges.</p>
+                        </div>
+                        <a href="files/Python_Essentials_AL.pdf" download style="background: rgba(16, 185, 129, 0.15); border: 1px solid var(--accent-green); color: var(--accent-green); font-size: 0.78rem; font-weight: 700; padding: 8px 14px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: fit-content; transition: var(--transition-smooth);">
+                            <i class="fa-solid fa-download"></i> Download PDF
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Certifications Block -->
+            <div class="bento-card span-4">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem;">
+                    <i class="fa-solid fa-award" style="color: var(--accent-purple); font-size: 1.25rem;"></i>
+                    <h3 style="font-size: 1.4rem; margin: 0;">Verified Credentials</h3>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                    
+                    <!-- Certification 1 -->
+                    <div style="background: rgba(168, 85, 247, 0.03); border: 1px solid rgba(168, 85, 247, 0.15); border-radius: 18px; padding: 1.25rem; display: flex; align-items: center; gap: 1.25rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 14px; background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fa-solid fa-shield-halved" style="font-size: 1.4rem; color: var(--accent-purple);"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem; color: var(--text-primary);">Cyber Security Fundamentals</h4>
+                            <span style="color: var(--text-secondary); font-size: 0.8rem; display: block; margin: 2px 0 6px 0;">Udemy Certified</span>
+                            <span style="color: var(--accent-green); font-size: 0.72rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+                                <i class="fa-solid fa-circle-check"></i> Verified Credential
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div style="background: rgba(0, 242, 254, 0.03); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 18px; padding: 1.25rem; display: flex; align-items: center; gap: 1.25rem;">
+                        <div style="width: 50px; height: 50px; border-radius: 14px; background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fa-brands fa-python" style="font-size: 1.4rem; color: var(--accent-cyan);"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem; color: var(--text-primary);">Python Programming Masterclass</h4>
+                            <span style="color: var(--text-secondary); font-size: 0.8rem; display: block; margin: 2px 0 6px 0;">Udemy Certified</span>
+                            <span style="color: var(--accent-green); font-size: 0.72rem; font-weight: 600; display: inline-flex; align-items: center; gap: 4px;">
+                                <i class="fa-solid fa-circle-check"></i> Verified Credential
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Roadmaps / Milestones -->
+            <div class="bento-card span-4" style="margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 2rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem;">
+                    <i class="fa-solid fa-map-location-dot" style="color: var(--accent-cyan); font-size: 1.25rem;"></i>
+                    <h3 style="font-size: 1.4rem; margin: 0;">Academic & Technical Milestones</h3>
+                </div>
+
+                <div style="position: relative; padding-left: 24px; border-left: 2px solid rgba(0, 242, 254, 0.2); display: flex; flex-direction: column; gap: 2rem;">
+                    
+                    <!-- Milestone 1 -->
+                    <div style="position: relative;">
+                        <div style="position: absolute; left: -33px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent-cyan); box-shadow: 0 0 12px var(--accent-cyan);"></div>
+                        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); border-radius: 18px; padding: 1.5rem;">
+                            <span style="color: var(--accent-cyan); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">2024 - Present</span>
+                            <h4 style="color: var(--text-primary); margin: 6px 0; font-size: 1.15rem;">Undergraduate Research & Engineering</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin: 0;">
+                                Enrolled in the Bachelor of Information and Communication Technology Honors program at the Faculty of Technological Studies, University of Vavuniya. Focussing on hardware-software engineering, database systems management, and system architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div style="position: relative;">
+                        <div style="position: absolute; left: -33px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent-purple); box-shadow: 0 0 12px var(--accent-purple);"></div>
+                        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--card-border); border-radius: 18px; padding: 1.5rem;">
+                            <span style="color: var(--accent-purple); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">Technical Leadership & Ed-Tech</span>
+                            <h4 style="color: var(--text-primary); margin: 6px 0; font-size: 1.15rem;">Full-Stack Developer & Technical Instructor</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.5; margin: 0;">
+                                Designed and deployed commercial-grade software solutions including GrowTower.lk (automated hydroponic telemetry). Instructing Advanced Level students in ICT algorithms, boolean structures, and networking principles.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+    </main>
 
-    </div>
-</div>
-    </div>
-    
-    <br/>
-<div class="bento-card span-4">
-    <!-- Teaching & Student Resource Hub -->
-<section style="margin-bottom: 3rem;">
-    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
-        <i class="fa-solid fa-graduation-cap" style="color: var(--accent-cyan, #00f2fe); font-size: 1.3rem;"></i>
-        <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0; color: #fff;">A/L ICT & SFT Student Resource Hub</h3>
-    </div>
-
-    <div class="bento-grid">
-        <!-- Resource Card 1: Logic Gates -->
-        <div class="bento-card span-2" style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-                <span style="background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--accent-cyan, #00f2fe); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 12px;">G.C.E. A/L ICT</span>
-                <i class="fa-solid fa-microchip" style="font-size: 1.3rem; color: var(--accent-cyan, #00f2fe);"></i>
-            </div>
-            <h4 style="color: #fff; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Logic Gates & Boolean Algebra Cheat Sheet</h4>
-            <p style="color: var(--text-secondary, #94a3b8); font-size: 0.85rem; line-height: 1.4; margin-bottom: 1.2rem;">Quick reference guide for truth tables, logic expressions, and circuit simplification.</p>
-            <a href="files/Logic_Gates_Summary.pdf" download style="background: rgba(0, 242, 254, 0.15); border: 1px solid var(--accent-cyan, #00f2fe); color: var(--accent-cyan, #00f2fe); font-size: 0.8rem; font-weight: 600; padding: 6px 14px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa-solid fa-download"></i> Download PDF
-            </a>
-        </div>
-
-        <!-- Resource Card 2: Python Essentials -->
-        <div class="bento-card span-2" style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.5rem;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
-                <span style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 12px;">Programming Basics</span>
-                <i class="fa-brands fa-python" style="font-size: 1.3rem; color: #34d399;"></i>
-            </div>
-            <h4 style="color: #fff; margin: 0 0 0.5rem 0; font-size: 1.1rem;">Python Programming Essentials Guide</h4>
-            <p style="color: var(--text-secondary, #94a3b8); font-size: 0.85rem; line-height: 1.4; margin-bottom: 1.2rem;">Core concepts, loops, functions, and sample A/L practical problems solved.</p>
-            <a href="files/Python_Essentials_AL.pdf" download style="background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #34d399; font-size: 0.8rem; font-weight: 600; padding: 6px 14px; border-radius: 10px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-                <i class="fa-solid fa-download"></i> Download PDF
-            </a>
-        </div>
-    </div>
-</section>
-</div>
-<br/>
-<div class="bento-card span-4">
-<!-- Certifications Grid -->
-<section style="margin-bottom: 3rem;">
-    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
-        <i class="fa-solid fa-award" style="color: var(--accent-purple, #7928ca); font-size: 1.3rem;"></i>
-        <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0; color: #fff;">Verified Certifications</h3>
-    </div>
-
-    <div class="bento-grid">
-        <!-- Cert Card 1 -->
-        <div class="bento-card span-2" style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.4rem; display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; border-radius: 14px; background: rgba(121, 40, 202, 0.15); border: 1px solid rgba(121, 40, 202, 0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fa-solid fa-shield-halved" style="font-size: 1.4rem; color: var(--accent-purple, #7928ca);"></i>
-            </div>
-            <div>
-                <h4 style="color: #fff; margin: 0 0 2px 0; font-size: 1rem;">Cyber Security Fundamentals</h4>
-                <p style="color: var(--text-secondary, #94a3b8); font-size: 0.8rem; margin: 0 0 6px 0;">Udemy Certified</p>
-                <span style="color: #34d399; font-size: 0.75rem; font-weight: 600;"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
-            </div>
-        </div>
-
-        <!-- Cert Card 2 -->
-        <div class="bento-card span-2" style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 1.4rem; display: flex; align-items: center; gap: 1rem;">
-            <div style="width: 50px; height: 50px; border-radius: 14px; background: rgba(0, 242, 254, 0.15); border: 1px solid rgba(0, 242, 254, 0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fa-brands fa-python" style="font-size: 1.4rem; color: var(--accent-cyan, #00f2fe);"></i>
-            </div>
-            <div>
-                <h4 style="color: #fff; margin: 0 0 2px 0; font-size: 1rem;">Python Programming Masterclass</h4>
-                <p style="color: var(--text-secondary, #94a3b8); font-size: 0.8rem; margin: 0 0 6px 0;">Udemy Certified</p>
-                <span style="color: #34d399; font-size: 0.75rem; font-weight: 600;"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
-            </div>
-        </div>
-    </div>
-</section>
-</div>
-<br/>
-<!-- Academic & Career Timeline -->
-<section style="margin-bottom: 3.5rem;">
-    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 2rem;">
-        <i class="fa-solid fa-timeline" style="color: var(--accent-cyan, #00f2fe); font-size: 1.3rem;"></i>
-        <h3 style="font-size: 1.4rem; font-weight: 700; margin: 0; color: #fff;">Academic & Tech Roadmap</h3>
-    </div>
-
-    <div style="position: relative; padding-left: 20px; border-left: 2px solid rgba(0, 242, 254, 0.2); display: flex; flex-direction: column; gap: 2rem;">
-        
-        <!-- Milestone 1 -->
-        <div style="position: relative;">
-            <div style="position: absolute; left: -29px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: #00f2fe; box-shadow: 0 0 12px #00f2fe;"></div>
-            <div style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1.2rem;">
-                <span style="color: var(--accent-cyan, #00f2fe); font-size: 0.78rem; font-weight: 700;">2024 - PRESENT</span>
-                <h4 style="color: #fff; margin: 4px 0; font-size: 1.1rem;">Undergraduate Student</h4>
-                <p style="color: var(--text-secondary, #94a3b8); font-size: 0.88rem; margin: 0;">Faculty of Technological Studies, University of Vavuniya</p>
-            </div>
-        </div>
-
-        <!-- Milestone 2 -->
-        <div style="position: relative;">
-            <div style="position: absolute; left: -29px; top: 0; width: 16px; height: 16px; border-radius: 50%; background: #7928ca; box-shadow: 0 0 12px #7928ca;"></div>
-            <div style="background: rgba(20, 24, 33, 0.6); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1.2rem;">
-                <span style="color: var(--accent-purple, #7928ca); font-size: 0.78rem; font-weight: 700;">COMMERCIAL & ED-TECH</span>
-                <h4 style="color: #fff; margin: 4px 0; font-size: 1.1rem;">Full-Stack Developer & ICT/SFT Educator</h4>
-                <p style="color: var(--text-secondary, #94a3b8); font-size: 0.88rem; margin: 0;">Building systems like GrowTower.lk & mentoring G.C.E. A/L students in ICT & SFT.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-    </div>
-
-</div>
-    <!-- Floating Dock Navigation -->
-     <nav class="dock-nav">
-        <a href="index.html" class="dock-item" title="Home"><i class="fa-solid fa-house"></i></a>
+    <!-- Floating Dock Nav -->
+    <nav class="dock-nav">
+        <a href="index.html" class="dock-item" title="Home Dashboard"><i class="fa-solid fa-house"></i></a>
         <a href="about.html" class="dock-item active" title="About & Career"><i class="fa-solid fa-user"></i></a>
-        <a href="skills.html" class="dock-item" title="Skills"><i class="fa-solid fa-code"></i></a>
-        <a href="projects.html" class="dock-item" title="Projects"><i class="fa-solid fa-folder-open"></i></a>
-        <!-- CV Quick View Link -->
-        <a href="cv.pdf" target="_blank" class="dock-item" title="View CV"><i class="fa-solid fa-file-pdf"></i></a>
+        <a href="skills.html" class="dock-item" title="Skills & Toolkit"><i class="fa-solid fa-code"></i></a>
+        <a href="projects.html" class="dock-item" title="Projects Showcase"><i class="fa-solid fa-folder-open"></i></a>
+        <a href="cv.pdf" target="_blank" class="dock-item" title="Curriculum Vitae"><i class="fa-solid fa-file-pdf"></i></a>
         <a href="terminal.html" class="dock-item" title="CLI Terminal"><i class="fa-solid fa-terminal"></i></a>
-        <a href="contact.html" class="dock-item" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        <a href="contact.html" class="dock-item" title="Get In Touch"><i class="fa-solid fa-envelope"></i></a>
     </nav>
 
     <script src="script.js"></script>
